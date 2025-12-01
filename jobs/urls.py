@@ -11,6 +11,12 @@ router.register(r'profiles', views.UserProfileViewSet, basename='profile')
 router.register(r'applications', views.ApplicationViewSet, basename='application')
 router.register(r'saved-jobs', views.SavedJobViewSet, basename='savedjob')
 
+# NEW: Normalized Data endpoints
+router.register(r'industries', views.IndustryViewSet, basename='industry')
+router.register(r'job-types', views.JobTypeViewSet, basename='jobtype')
+router.register(r'locations', views.LocationViewSet, basename='location')
+router.register(r'skills', views.SkillViewSet, basename='skill')
+
 
 # The API URLs are now determined automatically by the router.
 urlpatterns = [
